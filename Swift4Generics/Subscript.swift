@@ -16,9 +16,25 @@ extension Int: InfoDictionaryConvertible {
     }
 }
 
+protocol InfoDictionaryDefaultable {
+    static var defaultValue: Self { get }
+}
+
+extension String: InfoDictionaryDefaultable {
+    static var defaultValue: String {
+        return ""
+    }
+}
+
+extension Int: InfoDictionaryDefaultable {
+    static var defaultValue: Int {
+        return 0
+    }
+}
+
 extension InfoDictionary {
-    subscript<T: InfoDictionaryConvertible>(key: Key) -> T? {
+    subscript<T: InfoDictionaryConvertible & InfoDictionaryDefaultable>(key: Key) -> T {
         let stringValue = infoDictionary?[key.rawValue] as? String
-        return stringValue.flatMap(T.convert)
+        return stringValue.flatMap(T.convert) ?? T.defaultValue
     }
 }
