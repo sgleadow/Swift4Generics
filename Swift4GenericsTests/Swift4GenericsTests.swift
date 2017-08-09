@@ -7,6 +7,8 @@ struct FakeBundle: BundleType {
 
 class Swift4GenericsTests: XCTestCase {
     var bundle: BundleType!
+    var stringValue: String?
+    var intValue: Int?
     
     override func setUp() {
         super.setUp()
@@ -28,12 +30,12 @@ class Swift4GenericsTests: XCTestCase {
     }
     
     func test_generic_whenStringKeyIsPresent_ItReturnsCorrectValue() {
-        let value: String? = bundle.info.value(for: .name)
-        XCTAssertEqual(value, "App Name")
+        stringValue = bundle.info.value(for: .name)
+        XCTAssertEqual(stringValue, "App Name")
     }
     
 //    func test_whenIntKeyIsPresent_ItReturnsCorrectValue() {
-//        let value = bundle.info[.version] as? Int
-//        XCTAssertEqual(value, 123)
+//        intValue = bundle.info[.version] as? Int
+//        XCTAssertEqual(intValue, 123)
 //    }
 }
