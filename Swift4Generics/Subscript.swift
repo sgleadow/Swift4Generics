@@ -1,7 +1,7 @@
 import Foundation
 
 extension InfoDictionary {
-    subscript(key: Key) -> Any? {
-        return infoDictionary?[key.rawValue]
+    subscript<T>(key: Key) -> T? {
+        return infoDictionary?[key.rawValue] as? T
     }
 }
