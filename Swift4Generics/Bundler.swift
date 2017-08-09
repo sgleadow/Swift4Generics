@@ -8,14 +8,6 @@ struct InfoDictionary {
     }
     
     let infoDictionary: [String : Any]?
-    
-    subscript(key: Key) -> Any? {
-        return infoDictionary?[key.rawValue]
-    }
-    
-    func value<T>(for key: Key) -> T? {
-        return infoDictionary?[key.rawValue] as? T
-    }
 }
 
 protocol BundleType {
