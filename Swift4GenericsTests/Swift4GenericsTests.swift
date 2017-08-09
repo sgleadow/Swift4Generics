@@ -34,8 +34,8 @@ class Swift4GenericsTests: XCTestCase {
         XCTAssertEqual(stringValue, "App Name")
     }
     
-//    func test_whenIntKeyIsPresent_ItReturnsCorrectValue() {
-//        intValue = bundle.info[.version] as? Int
-//        XCTAssertEqual(intValue, 123)
-//    }
+    func test_whenIntKeyIsPresent_ItReturnsCorrectValue() {
+        intValue = bundle.info[.build]
+        XCTAssertEqual(intValue, 123)
+    }
 }
