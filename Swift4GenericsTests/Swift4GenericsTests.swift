@@ -17,13 +17,18 @@ class Swift4GenericsTests: XCTestCase {
             ])
     }
     
-    func test_whenKeyIsMissing_ItReturnsNil() {
+    func test_subscript_whenKeyIsMissing_ItReturnsNil() {
         let value = bundle.info[.version]
         XCTAssertNil(value)
     }
     
-    func test_whenStringKeyIsPresent_ItReturnsCorrectValue() {
+    func test_subscript_whenStringKeyIsPresent_ItReturnsCorrectValue() {
         let value = bundle.info[.name] as? String
+        XCTAssertEqual(value, "App Name")
+    }
+    
+    func test_generic_whenStringKeyIsPresent_ItReturnsCorrectValue() {
+        let value: String? = bundle.info.value(for: .name)
         XCTAssertEqual(value, "App Name")
     }
     
