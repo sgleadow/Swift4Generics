@@ -13,6 +13,7 @@
 		C965D7FF1F3BBCCF00CA90A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C965D7FE1F3BBCCF00CA90A2 /* Assets.xcassets */; };
 		C965D8021F3BBCCF00CA90A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C965D8001F3BBCCF00CA90A2 /* LaunchScreen.storyboard */; };
 		C965D80D1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965D80C1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift */; };
+		C965D8181F3BBD5A00CA90A2 /* Bundler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965D8171F3BBD5A00CA90A2 /* Bundler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C965D8081F3BBCCF00CA90A2 /* Swift4GenericsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift4GenericsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C965D80C1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4GenericsTests.swift; sourceTree = "<group>"; };
 		C965D80E1F3BBCCF00CA90A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C965D8171F3BBD5A00CA90A2 /* Bundler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C965D7FE1F3BBCCF00CA90A2 /* Assets.xcassets */,
 				C965D8001F3BBCCF00CA90A2 /* LaunchScreen.storyboard */,
 				C965D8031F3BBCCF00CA90A2 /* Info.plist */,
+				C965D8171F3BBD5A00CA90A2 /* Bundler.swift */,
 			);
 			path = Swift4Generics;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C965D8181F3BBD5A00CA90A2 /* Bundler.swift in Sources */,
 				C965D7FA1F3BBCCF00CA90A2 /* ViewController.swift in Sources */,
 				C965D7F81F3BBCCF00CA90A2 /* AppDelegate.swift in Sources */,
 			);
@@ -356,7 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stewgleadow.Swift4Generics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -370,7 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stewgleadow.Swift4Generics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

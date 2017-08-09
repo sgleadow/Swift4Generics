@@ -1,36 +1,34 @@
-//
-//  Swift4GenericsTests.swift
-//  Swift4GenericsTests
-//
-//  Created by Stewart Gleadow on 10/8/17.
-//  Copyright © 2017 Stewart Gleadow. All rights reserved.
-//
-
 import XCTest
 @testable import Swift4Generics
 
+struct FakeBundle: BundleType {
+    let infoDictionary: [String : Any]?
+}
+
 class Swift4GenericsTests: XCTestCase {
+    var bundle: BundleType!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        bundle = FakeBundle(infoDictionary: [
+            "CFBundleName": "App Name",
+            "CFBundleVersion": "123"
+            ])
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func test_whenKeyIsMissing_ItReturnsNil() {
+        let value = bundle.info[.version]
+        XCTAssertNil(value)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_whenStringKeyIsPresent_ItReturnsCorrectValue() {
+        let value = bundle.info[.name] as? String
+        XCTAssertEqual(value, "App Name")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+//    func test_whenIntKeyIsPresent_ItReturnsCorrectValue() {
+//        let value = bundle.info[.version] as? Int
+//        XCTAssertEqual(value, 123)
+//    }
 }
