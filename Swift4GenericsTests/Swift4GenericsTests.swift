@@ -17,18 +17,72 @@ class Swift4GenericsTests: XCTestCase {
             ])
     }
     
+    // Initial
+    
     func test_subscript_whenKeyIsMissing_ItReturnsNil() {
-        let stringValue: String = bundle.info[.version]
-        XCTAssertEqual(stringValue, "")
+        let value: String? = bundle.info[.version] as? String
+        XCTAssertEqual(value, nil)
     }
     
-    func test_subscript_whenStringKeyIsPresent_ItReturnsCorrectValue() {
-        let stringValue: String = bundle.info[.name]
-        XCTAssertEqual(stringValue, "App Name")
+    func test_subscript_whenStringValueIsPresent_ItReturnsCorrectValue() {
+        let value: String? = bundle.info[.name] as? String
+        XCTAssertEqual(value, "App Name")
     }
     
-    func test_whenIntKeyIsPresent_ItReturnsCorrectValue() {
-        let intValue: Int = bundle.info[.build]
-        XCTAssertEqual(intValue, 123)
-    }
+//    func test_subscript_whenIntValueIsPresent_ItReturnsCorrectValue() {
+//        let value: Int? = bundle.info[.name] as? Int
+//        XCTAssertEqual(value, 123)
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Converted
+    
+//    func test_subscript_whenKeyIsMissing_ItReturnsNil() {
+//        let value: String? = bundle.info[.version]
+//        XCTAssertEqual(value, nil)
+//    }
+//
+//    func test_subscript_whenStringValueIsPresent_ItReturnsCorrectValue() {
+//        let value: String? = bundle.info[.name]
+//        XCTAssertEqual(value, "App Name")
+//    }
+//
+//    func test_subscript_whenIntValueIsPresent_ItReturnsCorrectValue() {
+//        let value: Int? = bundle.info[.build]
+//        XCTAssertEqual(value, 123)
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Converted + Default
+    
+//    func test_subscript_whenStringValueIsPresent_ItReturnsCorrectValue() {
+//        let value: String = bundle.info[.name]
+//        XCTAssertEqual(value, "App Name")
+//    }
+//
+//    func test_subscript_whenIntValueIsPresent_ItReturnsCorrectValue() {
+//        let value: Int = bundle.info[.build]
+//        XCTAssertEqual(value, 123)
+//    }
 }

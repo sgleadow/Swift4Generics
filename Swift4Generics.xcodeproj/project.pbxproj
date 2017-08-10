@@ -12,8 +12,11 @@
 		C965D7FF1F3BBCCF00CA90A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C965D7FE1F3BBCCF00CA90A2 /* Assets.xcassets */; };
 		C965D80D1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965D80C1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift */; };
 		C965D8181F3BBD5A00CA90A2 /* Bundler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965D8171F3BBD5A00CA90A2 /* Bundler.swift */; };
-		C96F989A1F3BC6A800553F12 /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F98991F3BC6A800553F12 /* Subscript.swift */; };
-		C96F989C1F3BC6D700553F12 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F989B1F3BC6D700553F12 /* Generic.swift */; };
+		C96BA72C1F3C448800588FA0 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA72B1F3C448800588FA0 /* Convertible.swift */; };
+		C96BA72E1F3C44AC00588FA0 /* Defaulting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA72D1F3C44AC00588FA0 /* Defaulting.swift */; };
+		C96BA7301F3C450500588FA0 /* Final.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA72F1F3C450500588FA0 /* Final.swift */; };
+		C96BA7321F3C456C00588FA0 /* Converted.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BA7311F3C456C00588FA0 /* Converted.swift */; };
+		C96F989A1F3BC6A800553F12 /* Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F98991F3BC6A800553F12 /* Initial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +39,11 @@
 		C965D80C1F3BBCCF00CA90A2 /* Swift4GenericsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4GenericsTests.swift; sourceTree = "<group>"; };
 		C965D80E1F3BBCCF00CA90A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C965D8171F3BBD5A00CA90A2 /* Bundler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundler.swift; sourceTree = "<group>"; };
-		C96F98991F3BC6A800553F12 /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
-		C96F989B1F3BC6D700553F12 /* Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
+		C96BA72B1F3C448800588FA0 /* Convertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
+		C96BA72D1F3C44AC00588FA0 /* Defaulting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaulting.swift; sourceTree = "<group>"; };
+		C96BA72F1F3C450500588FA0 /* Final.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final.swift; sourceTree = "<group>"; };
+		C96BA7311F3C456C00588FA0 /* Converted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converted.swift; sourceTree = "<group>"; };
+		C96F98991F3BC6A800553F12 /* Initial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,11 @@
 				C965D7FE1F3BBCCF00CA90A2 /* Assets.xcassets */,
 				C965D8031F3BBCCF00CA90A2 /* Info.plist */,
 				C965D8171F3BBD5A00CA90A2 /* Bundler.swift */,
-				C96F98991F3BC6A800553F12 /* Subscript.swift */,
-				C96F989B1F3BC6D700553F12 /* Generic.swift */,
+				C96BA72B1F3C448800588FA0 /* Convertible.swift */,
+				C96BA72D1F3C44AC00588FA0 /* Defaulting.swift */,
+				C96F98991F3BC6A800553F12 /* Initial.swift */,
+				C96BA7311F3C456C00588FA0 /* Converted.swift */,
+				C96BA72F1F3C450500588FA0 /* Final.swift */,
 			);
 			path = Swift4Generics;
 			sourceTree = "<group>";
@@ -198,11 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96F989C1F3BC6D700553F12 /* Generic.swift in Sources */,
+				C96BA7301F3C450500588FA0 /* Final.swift in Sources */,
 				C965D8181F3BBD5A00CA90A2 /* Bundler.swift in Sources */,
-				C96F989A1F3BC6A800553F12 /* Subscript.swift in Sources */,
+				C96F989A1F3BC6A800553F12 /* Initial.swift in Sources */,
 				C965D7FA1F3BBCCF00CA90A2 /* ViewController.swift in Sources */,
+				C96BA72E1F3C44AC00588FA0 /* Defaulting.swift in Sources */,
+				C96BA7321F3C456C00588FA0 /* Converted.swift in Sources */,
 				C965D7F81F3BBCCF00CA90A2 /* AppDelegate.swift in Sources */,
+				C96BA72C1F3C448800588FA0 /* Convertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
