@@ -20,19 +20,19 @@ class Swift4GenericsTests: XCTestCase {
     // Initial
     
     func test_subscript_whenKeyIsMissing_ItReturnsNil() {
-        let value: String? = bundle.info[.version] as? String
-        XCTAssertEqual(value, nil)
+        let value: String? = bundle.info[.version]
+        XCTAssertEqual(value, "")
     }
     
     func test_subscript_whenStringValueIsPresent_ItReturnsCorrectValue() {
-        let value: String? = bundle.info[.name] as? String
+        let value: String? = bundle.info[.name]
         XCTAssertEqual(value, "App Name")
     }
     
-//    func test_subscript_whenIntValueIsPresent_ItReturnsCorrectValue() {
-//        let value: Int? = bundle.info[.name] as? Int
-//        XCTAssertEqual(value, 123)
-//    }
+    func test_subscript_whenIntValueIsPresent_ItReturnsCorrectValue() {
+        let value: Int? = bundle.info[.build]
+        XCTAssertEqual(value, 123)
+    }
     
     
     

@@ -1,9 +1,9 @@
 import Foundation
 
 extension InfoDictionary {
-    subscript(key: Key) -> Any? {
-        let value = infoDictionary?[key.rawValue]
-        return value
+    subscript<T: Convertible & Defaulting>(key: Key) -> T {
+        let value = infoDictionary?[key.rawValue] as? String
+        return value.flatMap(T.convert) ?? T.defaultValue
     }
 }
 
